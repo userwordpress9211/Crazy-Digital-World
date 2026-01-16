@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Heart, Utensils, Plane, Building2, Truck, Share2, ArrowRight, ShoppingBag, Landmark } from "lucide-react";
 
-const industries = [
+export const industries = [
   {
     icon: ShoppingBag,
     title: "E-commerce Industry",
     slug: "ecommerce",
     description: "Scale your online store with our expert listing and management services for major platforms.",
     features: ["Amazon & Flipkart Management", "Inventory Optimization", "Sales Growth Strategies", "Marketplace Analytics"],
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
   },
   {
     icon: Landmark,
@@ -51,7 +51,8 @@ const industries = [
     slug: "healthcare",
     description: "Compliant and secure healthcare applications for better patient care and management.",
     features: ["Telemedicine Platforms", "Patient Records Management", "Health Analytics", "HIPAA Compliance"],
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
+
   },
 ];
 
