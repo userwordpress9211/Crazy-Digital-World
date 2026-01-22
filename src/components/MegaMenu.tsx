@@ -1,64 +1,100 @@
 import { Link } from "react-router-dom";
-import { 
-  Laptop, 
-  ShoppingCart, 
-  Settings, 
-  Code, 
-  Smartphone, 
-  Globe, 
-  Cloud, 
+// import { services } from "@/data/services";
+
+import {
+  Laptop,
+  ShoppingCart,
+  Settings,
+  Code,
+  Smartphone,
+  Globe,
+  Cloud,
   Shield,
-  ArrowRight
+  ArrowRight,
+  Search,
+  Megaphone,
+  TrendingUp,
+  Users
 } from "lucide-react";
 
-const services = [
+var services = [
   {
     icon: Laptop,
     title: "IT Services & Consulting",
-    description: "Strategic IT guidance",
+    description: "Strategic IT guidance and planning",
     slug: "it-services-consulting",
   },
   {
     icon: ShoppingCart,
-    title: "E-Commerce & Listings",
-    description: "Amazon & Flipkart growth",
+    title: "E-Commerce & Marketplace Management",
+    description: "Amazon, Flipkart, Myntra & eBay growth",
     slug: "ecommerce-listings",
   },
   {
     icon: Settings,
-    title: "Operations & Workflow",
-    description: "Automate your business",
+    title: "Operations & Workflow Automation",
+    description: "Automate and optimize business processes",
     slug: "operations-workflow-automation",
   },
   {
     icon: Code,
-    title: "Custom Development",
-    description: "Tailored software solutions",
+    title: "Custom Software Development",
+    description: "Tailor-made software solutions",
     slug: "custom-software-development",
   },
   {
     icon: Smartphone,
     title: "Mobile App Development",
-    description: "iOS & Android applications",
+    description: "iOS & Android app development",
     slug: "mobile-app-development",
   },
   {
     icon: Globe,
     title: "Web Development",
-    description: "High-performance websites",
+    description: "High-performance, scalable websites",
     slug: "web-development",
   },
   {
     icon: Cloud,
     title: "Cloud Services",
-    description: "Scalable cloud solutions",
+    description: "Secure and scalable cloud solutions",
     slug: "cloud-services",
   },
   {
     icon: Shield,
     title: "Cybersecurity Solutions",
-    description: "Protect your digital assets",
+    description: "Protect systems, data & infrastructure",
     slug: "cybersecurity-solutions",
+  },
+  {
+    icon: Megaphone,
+    title: "Digital Marketing Services",
+    description: "Grow your brand and online visibility",
+    slug: "digital-marketing-services",
+  },
+  {
+    icon: Search,
+    title: "SEO Services",
+    description: "Improve rankings and organic traffic",
+    slug: "seo-services",
+  },
+  {
+    icon: TrendingUp,
+    title: "Performance Marketing",
+    description: "ROI-focused paid marketing campaigns",
+    slug: "performance-marketing",
+  },
+  {
+    icon: Users,
+    title: "Lead Generation",
+    description: "Generate high-quality business leads",
+    slug: "lead-generation",
+  },
+  {
+    icon: Shield,
+    title: "Social Media Marketing",
+    description: "Engage audiences and build trust",
+    slug: "social-media-marketing",
   },
 ];
 
@@ -72,11 +108,12 @@ const MegaMenu = ({ onClose }: MegaMenuProps) => {
       <div className="section-container py-10">
         <div className="grid lg:grid-cols-4 gap-10">
           {/* Services Grid */}
-          <div className="lg:col-span-3">
+          <div className="lg:col-span-4">
             <h3 className="text-xs font-bold text-[#6B7280] uppercase tracking-widest mb-6">
               Our Expertise
             </h3>
-            <div className="grid md:grid-cols-3 gap-6">
+
+            <div className="grid md:grid-cols-4 gap-6">
               {services.map((service, index) => (
                 <Link
                   key={index}
@@ -100,13 +137,15 @@ const MegaMenu = ({ onClose }: MegaMenuProps) => {
             </div>
           </div>
 
-          {/* CTA Section */}
-          <div className="lg:col-span-1">
+          {/* CTA */}
+          {/* <div className="lg:col-span-1">
             <div className="bg-gradient-to-br from-[#1EA6DA] to-[#0F5FA8] rounded-2xl p-8 text-white h-full flex flex-col justify-between shadow-lg shadow-[#1EA6DA]/20">
               <div>
-                <h3 className="font-bold text-xl mb-3">Need a Custom Solution?</h3>
+                <h3 className="font-bold text-xl mb-3">
+                  Need a Custom Solution?
+                </h3>
                 <p className="text-white/80 text-sm mb-6 leading-relaxed">
-                  Let's discuss your unique requirements and create a tailored roadmap for your success.
+                  Let’s discuss your goals and build a tailored digital strategy.
                 </p>
               </div>
               <Link
@@ -118,10 +157,10 @@ const MegaMenu = ({ onClose }: MegaMenuProps) => {
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
 
-        {/* View All Services Link */}
+        {/* Footer Row */}
         <div className="mt-8 pt-8 border-t border-[#E3E8EE] flex justify-between items-center">
           <Link
             to="/services"

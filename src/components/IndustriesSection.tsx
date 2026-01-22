@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Heart, Utensils, Plane, Building2, Truck, Share2, ShoppingBag, Landmark } from "lucide-react";
 
 const industries = [
@@ -84,6 +85,16 @@ const IndustriesSection = () => {
             </div>
           ))}
         </div>
+          {/* View All Industry */}
+                <div className="text-center mt-14">
+                  <Link
+                    to="/industries"
+                    className="inline-flex items-center gap-2 text-[#1EA6DA] font-bold hover:gap-3 transition-all"
+                  >
+                    View All Industry
+                    <span>→</span>
+                  </Link>
+                </div>
       </div>
     </section>
   );

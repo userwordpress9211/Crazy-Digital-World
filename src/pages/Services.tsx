@@ -2,6 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { services } from "@/data/services";
+
+
 import { 
   Laptop, 
   ShoppingCart, 
@@ -11,67 +14,184 @@ import {
   Globe, 
   Cloud, 
   Shield,
-  ArrowRight 
+  ArrowRight,
+  Search,
+  TrendingUp,
+  MessageSquare,
 } from "lucide-react";
 
 const services = [
   {
     icon: Laptop,
     title: "IT Services & Consulting",
-    description: "Strategic IT consulting to align your technology with business goals and drive innovation.",
+    description:
+      "Strategic IT consulting to align technology with business goals and drive innovation.",
     slug: "it-services-consulting",
-    features: ["IT Strategy", "Digital Transformation", "Tech Audits", "Infrastructure Planning"],
+    features: [
+      "IT Strategy & Roadmapping",
+      "Digital Transformation",
+      "Technology Audits",
+      "Infrastructure Planning",
+    ],
   },
   {
     icon: ShoppingCart,
-    title: "E-Commerce & Listings",
-    description: "Expert management for Flipkart, Amazon, Myntra, and eBay to boost your online sales.",
+    title: "E-Commerce & Marketplace Management",
+    description:
+      "Expert management for Amazon, Flipkart, Myntra, and eBay to maximize online sales.",
     slug: "ecommerce-listings",
-    features: ["Product Listing", "Account Management", "Ad Optimization", "Sales Analytics"],
+    features: [
+      "Product Listing Optimization",
+      "Account Management",
+      "Marketplace Ads",
+      "Sales & Performance Analytics",
+    ],
   },
   {
     icon: Settings,
-    title: "Operations & Workflow",
-    description: "Streamline your business processes with automated workflows and intelligent systems.",
+    title: "Operations & Workflow Automation",
+    description:
+      "Automate and optimize business processes with intelligent workflow solutions.",
     slug: "operations-workflow-automation",
-    features: ["Process Automation", "Workflow Design", "CRM Integration", "Task Management"],
+    features: [
+      "Business Process Automation",
+      "Workflow Design",
+      "CRM & Tool Integration",
+      "Task & Approval Management",
+    ],
   },
   {
     icon: Code,
     title: "Custom Software Development",
-    description: "Tailor-made software solutions designed to solve your unique business challenges.",
+    description:
+      "Tailor-made software solutions built to solve complex business challenges.",
     slug: "custom-software-development",
-    features: ["Enterprise Software", "SaaS Development", "API Integration", "Legacy Migration"],
+    features: [
+      "Enterprise Software Development",
+      "SaaS Product Development",
+      "API Development & Integration",
+      "Legacy System Modernization",
+    ],
   },
   {
     icon: Smartphone,
     title: "Mobile App Development",
-    description: "High-performance iOS and Android apps that provide seamless user experiences.",
+    description:
+      "High-performance iOS and Android apps delivering seamless user experiences.",
     slug: "mobile-app-development",
-    features: ["Native iOS/Android", "React Native", "Flutter", "App Store Optimization"],
+    features: [
+      "Native iOS & Android Apps",
+      "React Native Development",
+      "Flutter App Development",
+      "App Store Optimization",
+    ],
   },
   {
     icon: Globe,
     title: "Web Development",
-    description: "Modern, responsive, and SEO-friendly websites built with the latest technologies.",
+    description:
+      "Modern, responsive, and SEO-friendly websites built with cutting-edge technologies.",
     slug: "web-development",
-    features: ["React/Next.js", "WordPress", "E-commerce", "Performance Tuning"],
+    features: [
+      "React & Next.js Development",
+      "WordPress & CMS Solutions",
+      "E-Commerce Development",
+      "Performance & SEO Optimization",
+    ],
   },
   {
     icon: Cloud,
     title: "Cloud Services",
-    description: "Leverage cloud technologies to enhance scalability, reduce costs, and improve agility.",
+    description:
+      "Scalable and secure cloud solutions to improve agility and reduce infrastructure costs.",
     slug: "cloud-services",
-    features: ["AWS/Azure/GCP", "Cloud Migration", "DevOps", "Serverless"],
+    features: [
+      "AWS, Azure & GCP",
+      "Cloud Migration",
+      "DevOps & CI/CD",
+      "Serverless Architecture",
+    ],
   },
   {
     icon: Shield,
     title: "Cybersecurity Solutions",
-    description: "Protect your business with comprehensive security solutions and threat prevention.",
+    description:
+      "Comprehensive security solutions to protect systems, data, and digital assets.",
     slug: "cybersecurity-solutions",
-    features: ["Security Audits", "Data Protection", "Threat Detection", "Compliance"],
+    features: [
+      "Security Audits & Assessments",
+      "Data Protection & Encryption",
+      "Threat Detection & Response",
+      "Compliance & Risk Management",
+    ],
+  },
+  {
+    icon: TrendingUp,
+    title: "Digital Marketing Services",
+    description:
+      "Grow your brand visibility and engagement with result-driven digital marketing.",
+    slug: "digital-marketing-services",
+    features: [
+      "Marketing Strategy",
+      "Paid Advertising Campaigns",
+      "Content Marketing",
+      "Analytics & Reporting",
+    ],
+  },
+  {
+    icon: Search,
+    title: "SEO Services",
+    description:
+      "Improve search rankings, organic traffic, and long-term online visibility.",
+    slug: "seo-services",
+    features: [
+      "Keyword Research",
+      "On-Page & Technical SEO",
+      "Content Optimization",
+      "Link Building",
+    ],
+  },
+  {
+    icon: Globe,
+    title: "Performance Marketing",
+    description:
+      "ROI-focused marketing campaigns designed to maximize conversions and revenue.",
+    slug: "performance-marketing",
+    features: [
+      "Google & Meta Ads",
+      "Conversion Tracking",
+      "Landing Page Optimization",
+      "A/B Testing & Scaling",
+    ],
+  },
+  {
+    icon: Cloud,
+    title: "Lead Generation",
+    description:
+      "Targeted strategies to generate high-quality, sales-ready business leads.",
+    slug: "lead-generation",
+    features: [
+      "Audience Targeting",
+      "Lead Funnel Design",
+      "CRM Integration",
+      "Lead Nurturing Automation",
+    ],
+  },
+  {
+    icon: MessageSquare,
+    title: "Social Media Marketing",
+    description:
+      "Engage audiences and build brand loyalty across social media platforms.",
+    slug: "social-media-marketing",
+    features: [
+      "Social Media Strategy",
+      "Content Creation",
+      "Community Management",
+      "Paid Social Campaigns",
+    ],
   },
 ];
+
 
 const Services = () => {
   return (

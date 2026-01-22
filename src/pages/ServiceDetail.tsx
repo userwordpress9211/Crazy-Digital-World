@@ -13,6 +13,9 @@ import {
   Database, 
   Cloud, 
   Shield,
+  Laptop,
+  ShoppingCart,
+  Search,
 } from "lucide-react";
 
 const servicesData: Record<string, {
@@ -294,6 +297,230 @@ const servicesData: Record<string, {
       { title: "Monitoring", description: "Continuous threat monitoring" },
     ],
   },
+  "it-services-consulting": {
+  icon: Laptop,
+  title: "IT Services & Consulting",
+  description: "Strategic IT guidance for business growth",
+  longDescription:
+    "Our IT Services & Consulting help businesses align technology with strategic goals. We assess infrastructure, optimize systems, and provide expert guidance to improve efficiency, security, and scalability.",
+  features: [
+    "IT Strategy & Roadmapping",
+    "Infrastructure Assessment",
+    "System Optimization",
+    "Technology Consulting",
+    "Risk & Compliance Advisory",
+    "IT Support & Maintenance",
+  ],
+  benefits: [
+    "Better technology alignment",
+    "Reduced operational risks",
+    "Improved system performance",
+    "Cost-effective IT investments",
+    "Enhanced security posture",
+    "Future-ready infrastructure",
+  ],
+  process: [
+    { title: "Assessment", description: "Analyze current IT landscape" },
+    { title: "Strategy", description: "Define IT roadmap and goals" },
+    { title: "Planning", description: "Create implementation plan" },
+    { title: "Execution", description: "Deploy recommended solutions" },
+    { title: "Optimization", description: "Fine-tune systems" },
+    { title: "Support", description: "Ongoing monitoring and support" },
+  ],
+},
+"ecommerce-listings": {
+  icon: ShoppingCart,
+  title: "E-Commerce & Marketplace Management",
+  description: "Grow sales across online marketplaces",
+  longDescription:
+    "We help brands succeed on marketplaces like Amazon, Flipkart, Myntra, and eBay through optimized listings, advertising strategies, and performance tracking.",
+  features: [
+    "Product Listing Optimization",
+    "Catalog Management",
+    "Marketplace Ads Management",
+    "Pricing & Inventory Control",
+    "Order & Returns Handling",
+    "Sales Analytics & Reporting",
+  ],
+  benefits: [
+    "Higher product visibility",
+    "Improved conversion rates",
+    "Increased online revenue",
+    "Better inventory control",
+    "Reduced operational errors",
+    "Scalable marketplace growth",
+  ],
+  process: [
+    { title: "Audit", description: "Analyze existing listings" },
+    { title: "Optimization", description: "Enhance titles, images, content" },
+    { title: "Ads Setup", description: "Launch marketplace campaigns" },
+    { title: "Monitoring", description: "Track performance metrics" },
+    { title: "Optimization", description: "Improve ROI continuously" },
+    { title: "Scaling", description: "Expand to new categories" },
+  ],
+},
+"digital-marketing-services": {
+  icon: Shield,
+  title: "Digital Marketing Services",
+  description: "Boost brand visibility and engagement",
+  longDescription:
+    "Our digital marketing services help businesses grow their online presence through targeted campaigns, content strategies, and data-driven marketing initiatives.",
+  features: [
+    "Marketing Strategy Planning",
+    "Campaign Management",
+    "Content Marketing",
+    "Paid Advertising",
+    "Analytics & Reporting",
+    "Conversion Optimization",
+  ],
+  benefits: [
+    "Stronger online presence",
+    "Increased brand awareness",
+    "Higher customer engagement",
+    "Improved lead quality",
+    "Better ROI on marketing spend",
+    "Sustainable digital growth",
+  ],
+  process: [
+    { title: "Research", description: "Understand audience & goals" },
+    { title: "Strategy", description: "Define marketing roadmap" },
+    { title: "Execution", description: "Launch campaigns" },
+    { title: "Tracking", description: "Monitor performance" },
+    { title: "Optimization", description: "Improve results" },
+    { title: "Scaling", description: "Expand successful channels" },
+  ],
+},
+"seo-services": {
+  icon: Search,
+  title: "SEO Services",
+  description: "Improve search rankings and traffic",
+  longDescription:
+    "Our SEO services help businesses rank higher on search engines, attract qualified traffic, and achieve long-term organic growth.",
+  features: [
+    "Keyword Research",
+    "On-Page SEO",
+    "Technical SEO",
+    "Content Optimization",
+    "Link Building",
+    "SEO Reporting",
+  ],
+  benefits: [
+    "Higher search rankings",
+    "Increased organic traffic",
+    "Better website authority",
+    "Improved user experience",
+    "Higher conversion rates",
+    "Long-term growth",
+  ],
+  process: [
+    { title: "Audit", description: "Analyze website performance" },
+    { title: "Research", description: "Identify target keywords" },
+    { title: "Optimization", description: "Fix on-page & technical issues" },
+    { title: "Content", description: "Optimize and create content" },
+    { title: "Linking", description: "Build quality backlinks" },
+    { title: "Tracking", description: "Monitor rankings & traffic" },
+  ],
+},
+"performance-marketing": {
+  icon: ArrowRight,
+  title: "Performance Marketing",
+  description: "ROI-driven paid marketing campaigns",
+  longDescription:
+    "We run data-driven performance marketing campaigns focused on conversions, revenue, and measurable business outcomes.",
+  features: [
+    "Google Ads Management",
+    "Meta Ads Campaigns",
+    "Conversion Tracking",
+    "Landing Page Optimization",
+    "A/B Testing",
+    "ROI Analytics",
+  ],
+  benefits: [
+    "Maximum ROI",
+    "Scalable paid campaigns",
+    "Better audience targeting",
+    "Lower acquisition costs",
+    "Measurable performance",
+    "Faster growth",
+  ],
+  process: [
+    { title: "Planning", description: "Define goals & KPIs" },
+    { title: "Setup", description: "Create ad campaigns" },
+    { title: "Launch", description: "Go live with ads" },
+    { title: "Testing", description: "Optimize creatives & copy" },
+    { title: "Scaling", description: "Increase budget on winners" },
+    { title: "Reporting", description: "Track ROI & conversions" },
+  ],
+},
+"lead-generation": {
+  icon: Cloud,
+  title: "Lead Generation",
+  description: "Generate high-quality business leads",
+  longDescription:
+    "Our lead generation solutions attract, engage, and convert prospects using targeted strategies and conversion-focused campaigns.",
+  features: [
+    "Audience Targeting",
+    "Landing Page Funnels",
+    "Paid Lead Campaigns",
+    "CRM Integration",
+    "Email Automation",
+    "Lead Qualification",
+  ],
+  benefits: [
+    "High-quality leads",
+    "Lower cost per lead",
+    "Improved sales pipeline",
+    "Better conversion rates",
+    "Scalable lead flow",
+    "Sales-ready prospects",
+  ],
+  process: [
+    { title: "Targeting", description: "Identify ideal audience" },
+    { title: "Funnel Design", description: "Create conversion funnels" },
+    { title: "Campaigns", description: "Launch lead ads" },
+    { title: "Capture", description: "Collect lead data" },
+    { title: "Nurture", description: "Qualify and nurture leads" },
+    { title: "Handover", description: "Deliver to sales team" },
+  ],
+},
+"social-media-marketing": {
+  icon: Shield,
+  title: "Social Media Marketing",
+  description: "Build engagement and brand loyalty",
+  longDescription:
+    "We help brands grow and engage audiences across social platforms with creative content and targeted campaigns.",
+  features: [
+    "Social Media Strategy",
+    "Content Creation",
+    "Community Management",
+    "Paid Social Campaigns",
+    "Influencer Marketing",
+    "Analytics & Insights",
+  ],
+  benefits: [
+    "Stronger brand presence",
+    "Higher engagement rates",
+    "Improved customer trust",
+    "Consistent brand messaging",
+    "Increased conversions",
+    "Audience growth",
+  ],
+  process: [
+    { title: "Planning", description: "Define platform strategy" },
+    { title: "Content", description: "Create engaging content" },
+    { title: "Publishing", description: "Schedule and post" },
+    { title: "Engagement", description: "Interact with audience" },
+    { title: "Ads", description: "Run paid campaigns" },
+    { title: "Optimization", description: "Improve performance" },
+  ],
+},
+
+
+
+
+
+
+
 };
 
 const ServiceDetail = () => {
@@ -436,7 +663,7 @@ const ServiceDetail = () => {
               <Button variant="secondary" size="xl" asChild>
                 <Link to="/contact">Get Free Consultation</Link>
               </Button>
-              <Button variant="outline" size="xl" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+              <Button variant="outline" size="xl" className="border-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
                 <Link to="/services">
                   Explore Other Services
                   <ArrowRight className="w-4 h-4 ml-2" />
