@@ -8,17 +8,17 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Our Office",
-    details: ["123 Digital Avenue, Tech City", "TC 54321, United States"],
+    details: ["123 Digital Avenue, Tech City", "Plot No. 367 Pu4 Scheme No. 54 Behind C21 Mall Indore - 452010 (M.P.)"],
   },
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 9039 502 924", "+1 (234) 567-891"],
+    details: ["+91 9039 502 924"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@crazydigitalworlds.com", "support@crazydigitalworld.com"],
+    details: ["info@crazydigitalworlds.com"],
   },
   {
     icon: Clock,
