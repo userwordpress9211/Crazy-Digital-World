@@ -28,7 +28,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#1F2933]">Call Us</h4>
-                  <p className="text-[#4B5563]">+1 (234) 567-890</p>
+                  <p className="text-[#4B5563]">+91 9039 502 924</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -37,7 +37,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#1F2933]">Email Us</h4>
-                  <p className="text-[#4B5563]">hello@crazydigitalworld.com</p>
+                  <p className="text-[#4B5563]">info@crazydigitalworlds.com</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -46,7 +46,8 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-[#1F2933]">Visit Us</h4>
-                  <p className="text-[#4B5563]">123 Digital Avenue, Tech City, TC 54321</p>
+                  <p className="text-[#4B5563]">Plot No. 367 Pu4 Scheme No. 54 
+Behind C21 Mall Indore - 452010 (M.P.)</p>
                 </div>
               </div>
             </div>

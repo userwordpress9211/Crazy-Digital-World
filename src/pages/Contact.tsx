@@ -13,12 +13,12 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+1 (234) 567-890", "+1 (234) 567-891"],
+    details: ["+91 9039 502 924", "+1 (234) 567-891"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["hello@crazydigitalworld.com", "support@crazydigitalworld.com"],
+    details: ["info@crazydigitalworlds.com", "support@crazydigitalworld.com"],
   },
   {
     icon: Clock,
@@ -144,7 +144,7 @@ const Contact = () => {
                         </label>
                         <input
                           type="tel"
-                          placeholder="+1 (234) 567-890"
+                          placeholder="+91 9039 502 924"
                           className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}

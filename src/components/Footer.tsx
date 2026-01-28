@@ -78,15 +78,16 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm">
                 <MapPin className="w-5 h-5 text-[#1EA6DA] shrink-0" />
-                <span>123 Digital Avenue, Tech City, TC 54321</span>
+                <span>Plot No. 367 Pu4 Scheme No. 54 
+Behind C21 Mall Indore - 452010 (M.P.)</span>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Phone className="w-5 h-5 text-[#1EA6DA] shrink-0" />
-                <span>+1 (234) 567-890</span>
+                <span>+91 9039 502 924</span>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <Mail className="w-5 h-5 text-[#1EA6DA] shrink-0" />
-                <span>hello@crazydigitalworld.com</span>
+                <span>info@crazydigitalworlds.com</span>
               </li>
             </ul>
           </div>
