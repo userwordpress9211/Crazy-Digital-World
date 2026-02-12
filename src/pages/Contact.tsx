@@ -1,8 +1,10 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, Loader2 } from "lucide-react";
 import { useState } from "react";
+
+const API_URL = "https://admincrazydigitalworld.guptatechweb.com/api/contacts";
 
 const contactInfo = [
   {
@@ -37,10 +39,73 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ type: "success" | "error" | ""; message: string }>({
+    type: "",
+    message: "",
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log(formData);
+    setIsSubmitting(true);
+    setSubmitStatus({ type: "", message: "" });
+
+    // Prepare data for API
+    const apiData = {
+      full_name: formData.name,
+      email: formData.email,
+      subject: formData.service 
+        ? `Service Inquiry: ${formData.service.replace(/-/g, " ").toUpperCase()}`
+        : "Contact Form Submission",
+      message: `
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone || "Not provided"}
+Company: ${formData.company || "Not provided"}
+Service: ${formData.service ? formData.service.replace(/-/g, " ").toUpperCase() : "Not selected"}
+
+Message:
+${formData.message}
+      `.trim(),
+    };
+
+    try {
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(apiData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: "success",
+          message: "Thank you! Your message has been sent successfully. We'll get back to you soon.",
+        });
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          company: "",
+          service: "",
+          message: "",
+        });
+      } else {
+        throw new Error(result.message || "Failed to send message");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      setSubmitStatus({
+        type: "error",
+        message: error instanceof Error ? error.message : "Something went wrong. Please try again.",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -107,6 +172,20 @@ const Contact = () => {
                   <h2 className="text-2xl font-bold font-heading text-[#1F2933] mb-8">
                     Send Us a Message
                   </h2>
+
+                  {/* Status Message */}
+                  {submitStatus.message && (
+                    <div
+                      className={`mb-6 p-4 rounded-xl ${
+                        submitStatus.type === "success"
+                          ? "bg-green-50 text-green-800 border border-green-200"
+                          : "bg-red-50 text-red-800 border border-red-200"
+                      }`}
+                    >
+                      {submitStatus.message}
+                    </div>
+                  )}
+
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div className="space-y-2">
@@ -117,9 +196,10 @@ const Contact = () => {
                           type="text"
                           required
                           placeholder="John Doe"
-                          className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all"
+                          className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all disabled:opacity-50"
                           value={formData.name}
                           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                          disabled={isSubmitting}
                         />
                       </div>
                       <div className="space-y-2">
@@ -130,9 +210,10 @@ const Contact = () => {
                           type="email"
                           required
                           placeholder="john@example.com"
-                          className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all"
+                          className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all disabled:opacity-50"
                           value={formData.email}
                           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          disabled={isSubmitting}
                         />
                       </div>
                     </div>
@@ -145,9 +226,10 @@ const Contact = () => {
                         <input
                           type="tel"
                           placeholder="+91 9039 502 924"
-                          className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all"
+                          className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all disabled:opacity-50"
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                          disabled={isSubmitting}
                         />
                       </div>
                       <div className="space-y-2">
@@ -157,9 +239,10 @@ const Contact = () => {
                         <input
                           type="text"
                           placeholder="Your Company"
-                          className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all"
+                          className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all disabled:opacity-50"
                           value={formData.company}
                           onChange={(e) => setFormData({ ...formData, company: e.target.value })}
+                          disabled={isSubmitting}
                         />
                       </div>
                     </div>
@@ -169,9 +252,10 @@ const Contact = () => {
                         Service Interested In
                       </label>
                       <select
-                        className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all appearance-none"
+                        className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all appearance-none disabled:opacity-50"
                         value={formData.service}
                         onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                        disabled={isSubmitting}
                       >
                         <option value="">Select a service</option>
                         <option value="it-consulting">IT Services & Consulting</option>
@@ -191,15 +275,29 @@ const Contact = () => {
                         required
                         rows={5}
                         placeholder="Tell us about your project..."
-                        className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all resize-none"
+                        className="w-full px-4 py-3 rounded-xl border border-[#E3E8EE] bg-white text-[#1F2933] focus:outline-none focus:ring-2 focus:ring-[#1EA6DA] transition-all resize-none disabled:opacity-50"
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        disabled={isSubmitting}
                       />
                     </div>
 
-                    <Button type="submit" className="w-full bg-[#1EA6DA] text-white hover:bg-[#0F5FA8] h-14 text-lg font-bold rounded-xl shadow-lg shadow-[#1EA6DA]/20">
-                      <Send className="w-5 h-5 mr-2" />
-                      Send Message
+                    <Button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full bg-[#1EA6DA] text-white hover:bg-[#0F5FA8] h-14 text-lg font-bold rounded-xl shadow-lg shadow-[#1EA6DA]/20 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                          Sending...
+                        </>
+                      ) : (
+                        <>
+                          <Send className="w-5 h-5 mr-2" />
+                          Send Message
+                        </>
+                      )}
                     </Button>
                   </form>
                 </div>
