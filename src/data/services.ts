@@ -1,15 +1,10 @@
 import {
-  Laptop,
-  ShoppingCart,
-  Settings,
-  Code,
-  Smartphone,
-  Globe,
-  Cloud,
-  Shield,
   TrendingUp,
   Search,
-  Megaphone,
+  Share2,
+  Target,
+  Globe,
+  Palette,
 } from "lucide-react";
 
 export interface ServiceItem {
@@ -22,91 +17,51 @@ export interface ServiceItem {
 
 export const services: ServiceItem[] = [
   {
-    icon: Laptop,
-    title: "IT Services & Consulting",
+    icon: TrendingUp,
+    title: "Performance Marketing",
     description:
-      "Strategic IT consulting and infrastructure solutions aligned with your business goals.",
-    slug: "it-services-consulting",
-    color: "#1EA6DA",
-  },
-  {
-    icon: ShoppingCart,
-    title: "E-Commerce & Marketplace Management",
-    description:
-      "Complete management for Amazon, Flipkart, Myntra, and eBay to boost sales.",
-    slug: "ecommerce-listings",
-    color: "#2EC4F1",
-  },
-  {
-    icon: Settings,
-    title: "Operations & Workflow Automation",
-    description:
-      "Automate and optimize workflows with scalable business systems.",
-    slug: "operations-workflow-automation",
-    color: "#3B82F6",
-  },
-  {
-    icon: Code,
-    title: "Custom Software Development",
-    description:
-      "Tailor-made software solutions to solve complex business challenges.",
-    slug: "custom-software-development",
-    color: "#1EA6DA",
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile App Development",
-    description:
-      "High-performance iOS and Android applications with seamless UX.",
-    slug: "mobile-app-development",
-    color: "#2EC4F1",
-  },
-  {
-    icon: Globe,
-    title: "Web Development",
-    description:
-      "Modern, responsive, and SEO-friendly websites built to convert.",
-    slug: "web-development",
-    color: "#3B82F6",
-  },
-  {
-    icon: Megaphone,
-    title: "Digital Marketing Services",
-    description:
-      "Data-driven marketing strategies to grow visibility and engagement.",
-    slug: "digital-marketing-services",
+      "Data-driven paid advertising campaigns that deliver measurable ROI across all digital channels.",
+    slug: "performance-marketing",
     color: "#1EA6DA",
   },
   {
     icon: Search,
     title: "SEO Services",
     description:
-      "Improve rankings, organic traffic, and online visibility.",
+      "Comprehensive search engine optimization to improve rankings and drive organic traffic.",
     slug: "seo-services",
     color: "#2EC4F1",
   },
   {
-    icon: TrendingUp,
-    title: "Performance Marketing",
+    icon: Share2,
+    title: "Social Media Marketing",
     description:
-      "ROI-focused campaigns designed to maximize conversions.",
-    slug: "performance-marketing",
+      "Strategic social media campaigns that build engagement, brand awareness, and drive conversions.",
+    slug: "social-media-marketing",
     color: "#3B82F6",
   },
   {
-    icon: Cloud,
+    icon: Target,
     title: "Lead Generation",
     description:
-      "Targeted strategies to generate high-quality business leads.",
+      "Targeted lead generation campaigns that attract and convert high-quality prospects.",
     slug: "lead-generation",
     color: "#1EA6DA",
   },
   {
-    icon: Shield,
-    title: "Social Media Marketing",
+    icon: Globe,
+    title: "Website Design & Development",
     description:
-      "Engage and grow audiences across social platforms.",
-    slug: "social-media-marketing",
+      "High-converting websites built with modern technologies and user-centric design principles.",
+    slug: "web-development",
     color: "#2EC4F1",
+  },
+  {
+    icon: Palette,
+    title: "Branding & Creative Strategy",
+    description:
+      "Complete brand identity development and creative campaigns that make your business unforgettable.",
+    slug: "branding-creative",
+    color: "#3B82F6",
   },
 ];

@@ -1,42 +1,36 @@
 import { Link } from "react-router-dom";
-import { Heart, Utensils, Plane, Building2, Truck, Share2, ShoppingBag, Landmark } from "lucide-react";
+import { ShoppingBag, Building2, GraduationCap, Heart, Rocket } from "lucide-react";
 
 const industries = [
   {
     icon: ShoppingBag,
-    title: "E-commerce Industry",
-    description: "Scale your online store with our expert listing and management services for major platforms.",
-    features: ["Amazon & Flipkart Management", "Inventory Optimization", "Sales Growth Strategies"],
-  },
-  {
-    icon: Landmark,
-    title: "Finance Industry",
-    description: "Secure and robust financial systems for modern banking and fintech applications.",
-    features: ["Automated Billing Systems", "Secure Payment Gateways", "Financial Analytics"],
-  },
-  {
-    icon: Share2,
-    title: "Social Media Platforms",
-    description: "Engaging social networking solutions with real-time features and AI-driven content.",
-    features: ["Real-time Messaging", "Content Personalization", "Interactive UI/UX"],
-  },
-  {
-    icon: Truck,
-    title: "Supply Chain Management",
-    description: "Optimize your logistics with end-to-end visibility and intelligent tracking solutions.",
-    features: ["Real-time Tracking", "Warehouse Management", "Route Optimization"],
+    title: "E-commerce",
+    description: "Drive more sales and customer engagement with data-driven digital marketing strategies tailored for online retailers.",
+    features: ["Conversion Rate Optimization", "Customer Acquisition Campaigns", "E-commerce Analytics"],
   },
   {
     icon: Building2,
-    title: "Real Estate Apps",
-    description: "Modern property management and listing platforms with immersive virtual experiences.",
-    features: ["Virtual Property Tours", "Lead Management CRM", "Smart Search Filters"],
+    title: "Real Estate",
+    description: "Attract more leads and close more deals with targeted marketing campaigns for property listings and developments.",
+    features: ["Lead Generation Campaigns", "Property Marketing", "Local SEO Optimization"],
+  },
+  {
+    icon: GraduationCap,
+    title: "Education",
+    description: "Grow enrollment and engagement with digital marketing that connects educational institutions with prospective students.",
+    features: ["Student Lead Generation", "Brand Awareness Campaigns", "Content Marketing"],
   },
   {
     icon: Heart,
-    title: "Healthcare Solutions",
-    description: "Compliant and secure healthcare applications for better patient care and management.",
-    features: ["Telemedicine Platforms", "Patient Records Management", "Health Analytics"],
+    title: "Healthcare",
+    description: "Build trust and attract patients with compliant, results-focused marketing strategies for healthcare providers.",
+    features: ["Patient Acquisition", "Healthcare Branding", "Local Search Optimization"],
+  },
+  {
+    icon: Rocket,
+    title: "Startups & Local Businesses",
+    description: "Accelerate growth for startups and local businesses with cost-effective, high-impact digital marketing solutions.",
+    features: ["Growth Hacking", "Local SEO & PPC", "Brand Building"],
   },
 ];
 

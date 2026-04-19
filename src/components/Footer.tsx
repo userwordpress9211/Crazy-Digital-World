@@ -4,32 +4,27 @@ import { Button } from "@/components/ui/button";
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from "lucide-react";
 
 const industries = [
-  { name: "E-commerce Industry", href: "#" },
-  { name: "Finance Industry", href: "#" },
-  { name: "Social Media Platforms", href: "#" },
-  { name: "Supply Chain Management", href: "#" },
-  { name: "Real Estate Apps", href: "#" },
-  { name: "Travel Solutions", href: "#" },
-  { name: "Food and Restaurant", href: "#" },
-  { name: "Healthcare Solutions", href: "#" },
+  { name: "E-commerce", href: "/industries" },
+  { name: "Real Estate", href: "/industries" },
+  { name: "Education", href: "/industries" },
+  { name: "Healthcare", href: "/industries" },
+  { name: "Startups & Local Businesses", href: "/industries" },
 ];
 
 const services = [
-  { name: "IT Services & Consulting", href: "#" },
-  { name: "E-Commerce & Listings", href: "#" },
-  { name: "Operations & Workflow Automation", href: "#" },
-  { name: "Custom Software Development", href: "#" },
-  { name: "Mobile App Development", href: "#" },
-  { name: "Web Development", href: "#" },
-  { name: "Cloud Services", href: "#" },
-  { name: "Cybersecurity Solutions", href: "#" },
+  { name: "Performance Marketing", href: "/services/performance-marketing" },
+  { name: "SEO Services", href: "/services/seo-services" },
+  { name: "Social Media Marketing", href: "/services/social-media-marketing" },
+  { name: "Lead Generation", href: "/services/lead-generation" },
+  { name: "Website Design & Development", href: "/services/web-development" },
+  { name: "Branding & Creative Strategy", href: "/services/branding-creative" },
 ];
 
 const Footer = () => {
   return (
     <footer className="bg-[#F3FAFE] text-[#4B5563] border-t border-[#E3E8EE]">
       <div className="section-container py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Logo & Description */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-6">
@@ -39,7 +34,8 @@ const Footer = () => {
               </div>
             </Link>
             <p className="text-[#4B5563] mb-6 leading-relaxed">
-              Accelerate your digital growth with our expert IT services and consulting. We build solutions that drive results.
+              We combine creativity, data, and AI to deliver measurable business growth. 
+              From startups to global brands, we help businesses dominate the digital landscape.
             </p>
             <div className="flex gap-3">
               {[Facebook, Twitter, Linkedin, Instagram].map((Icon, index) => (
@@ -67,6 +63,29 @@ const Footer = () => {
                     <span className="w-1.5 h-1.5 rounded-full bg-[#1EA6DA]/30" />
                     {item.name}
                   </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-lg font-bold text-[#1F2933] font-heading mb-6">Quick Links</h4>
+            <ul className="space-y-3">
+              {[
+                { name: "About Us", href: "/about" },
+                { name: "Why Us", href: "/why-us" },
+                { name: "Industries", href: "/industries" },
+                { name: "Blog", href: "/blog" },
+              ].map((item) => (
+                <li key={item.name}>
+                  <Link
+                    to={item.href}
+                    className="text-[#4B5563] hover:text-[#1EA6DA] transition-colors text-sm flex items-center gap-2"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#1EA6DA]/30" />
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>

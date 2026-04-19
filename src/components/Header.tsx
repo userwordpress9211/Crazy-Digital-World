@@ -16,20 +16,19 @@ const Header = () => {
 
   const navLinks = [
     { name: "About Us", href: "/about", isPage: true },
+    { name: "Why Us", href: "/why-us", isPage: true },
     { name: "Services", href: "/services", hasDropdown: true, isPage: true },
     { name: "Industries", href: "/industries", isPage: true },
     { name: "Blog", href: "/blog", isPage: true },
   ];
 
   const mobileServices = [
-    { name: "IT Services & Consulting", href: "/services/it-services-consulting" },
-    { name: "E-Commerce & Listings", href: "/services/ecommerce-listings" },
-    { name: "Operations & Workflow Automation", href: "/services/operations-workflow-automation" },
-    { name: "Custom Software Development", href: "/services/custom-software-development" },
-    { name: "Mobile App Development", href: "/services/mobile-app-development" },
-    { name: "Web Development", href: "/services/web-development" },
-    { name: "Cloud Services", href: "/services/cloud-services" },
-    { name: "Cybersecurity Solutions", href: "/services/cybersecurity-solutions" },
+    { name: "Performance Marketing", href: "/services/performance-marketing" },
+    { name: "SEO Services", href: "/services/seo-services" },
+    { name: "Social Media Marketing", href: "/services/social-media-marketing" },
+    { name: "Lead Generation", href: "/services/lead-generation" },
+    { name: "Website Design & Development", href: "/services/web-development" },
+    { name: "Branding & Creative Strategy", href: "/services/branding-creative" },
   ];
 
   /** Close Mega Menu on outside click */

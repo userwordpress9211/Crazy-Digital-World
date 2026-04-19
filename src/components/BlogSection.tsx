@@ -31,7 +31,7 @@ const BlogSection = () => {
             Our Insights
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#1F2933] mb-6">
-            Latest from Our Blog
+            Digital Marketing Insights
           </h2>
           <p className="text-lg text-[#4B5563] max-w-2xl mx-auto">
             Stay updated with the latest trends, tips, and insights from the world of 

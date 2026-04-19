@@ -14,11 +14,11 @@ const ContactSection = () => {
               Get In Touch
             </div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#1F2933] mb-6">
-              Ready to Start Your <span className="text-[#1EA6DA]">Digital Journey?</span>
+              Ready to Scale Your <span className="text-[#1EA6DA]">Business?</span>
             </h2>
             <p className="text-lg text-[#4B5563] mb-10 leading-relaxed">
-              Have a project in mind or just want to say hello? Our team is ready to help 
-              you navigate the digital world and achieve your business goals.
+              Ready to accelerate your growth with data-driven digital marketing? 
+              Let's discuss your goals and create a custom strategy for measurable results.
             </p>
 
             <div className="space-y-8">

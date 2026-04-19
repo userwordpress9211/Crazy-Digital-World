@@ -2,57 +2,48 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Heart, Utensils, Plane, Building2, Truck, Share2, ArrowRight, ShoppingBag, Landmark } from "lucide-react";
+import { ShoppingBag, Building2, GraduationCap, Heart, Rocket, ArrowRight } from "lucide-react";
 
 export const industries = [
   {
     icon: ShoppingBag,
-    title: "E-commerce Industry",
+    title: "E-commerce",
     slug: "ecommerce",
-    description: "Scale your online store with our expert listing and management services for major platforms.",
-    features: ["Amazon & Flipkart Management", "Inventory Optimization", "Sales Growth Strategies", "Marketplace Analytics"],
+    description: "Drive more sales and customer engagement with data-driven digital marketing strategies tailored for online retailers.",
+    features: ["Conversion Rate Optimization", "Customer Acquisition Campaigns", "E-commerce Analytics", "Shopping Cart Abandonment Recovery"],
     image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=600&fit=crop",
   },
   {
-    icon: Landmark,
-    title: "Finance Industry",
-    slug: "finance",
-    description: "Secure and robust financial systems for modern banking and fintech applications.",
-    features: ["Automated Billing Systems", "Secure Payment Gateways", "Financial Analytics", "Compliance Management"],
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop",
-  },
-  {
-    icon: Share2,
-    title: "Social Media Platforms",
-    slug: "social-media",
-    description: "Engaging social networking solutions with real-time features and AI-driven content.",
-    features: ["Real-time Messaging", "Content Personalization", "Interactive UI/UX", "Community Tools"],
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&h=600&fit=crop",
-  },
-  {
-    icon: Truck,
-    title: "Supply Chain Management",
-    slug: "supply-chain",
-    description: "Optimize your logistics with end-to-end visibility and intelligent tracking solutions.",
-    features: ["Real-time Tracking", "Warehouse Management", "Route Optimization", "Inventory Control"],
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=600&fit=crop",
-  },
-  {
     icon: Building2,
-    title: "Real Estate Apps",
+    title: "Real Estate",
     slug: "real-estate",
-    description: "Modern property management and listing platforms with immersive virtual experiences.",
-    features: ["Virtual Property Tours", "Lead Management CRM", "Smart Search Filters", "Property Analytics"],
+    description: "Attract more leads and close more deals with targeted marketing campaigns for property listings and developments.",
+    features: ["Lead Generation Campaigns", "Property Marketing", "Local SEO Optimization", "Virtual Tour Integration"],
     image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&h=600&fit=crop",
   },
   {
+    icon: GraduationCap,
+    title: "Education",
+    slug: "education",
+    description: "Grow enrollment and engagement with digital marketing that connects educational institutions with prospective students.",
+    features: ["Student Lead Generation", "Brand Awareness Campaigns", "Content Marketing", "Social Proof Marketing"],
+    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop",
+  },
+  {
     icon: Heart,
-    title: "Healthcare Solutions",
+    title: "Healthcare",
     slug: "healthcare",
-    description: "Compliant and secure healthcare applications for better patient care and management.",
-    features: ["Telemedicine Platforms", "Patient Records Management", "Health Analytics", "HIPAA Compliance"],
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop",
-
+    description: "Build trust and attract patients with compliant, results-focused marketing strategies for healthcare providers.",
+    features: ["Patient Acquisition", "Healthcare Branding", "Local Search Optimization", "Review Management"],
+    image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=600&fit=crop",
+  },
+  {
+    icon: Rocket,
+    title: "Startups & Local Businesses",
+    slug: "startups",
+    description: "Accelerate growth for startups and local businesses with cost-effective, high-impact digital marketing solutions.",
+    features: ["Growth Hacking", "Local SEO & PPC", "Brand Building", "Community Engagement"],
+    image: "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop",
   },
 ];
 

@@ -14,6 +14,7 @@ import Contact from "./pages/Contact";
 import IndustrySingle from "./pages/IndustrySingle";
 import NotFound from "./pages/NotFound";
 import BlogSingleView from './pages/BlogSingleView';
+import WhyUs from "./pages/WhyUs";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
+          <Route path="/why-us" element={<WhyUs />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
           <Route path="/services-enhanced/:slug" element={<ServiceDetailEnhanced />} />

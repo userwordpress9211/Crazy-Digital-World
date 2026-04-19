@@ -1,29 +1,23 @@
-import { Search, Lightbulb, Code, Rocket } from "lucide-react";
+import { Search, Lightbulb, Rocket } from "lucide-react";
 
 const steps = [
   {
     icon: Search,
-    title: "Discovery & Analysis",
-    description: "We dive deep into your business processes to identify growth opportunities and technical gaps.",
+    title: "Analyze",
+    description: "Data & Market Research - We dive deep into your business, audience, and market to identify growth opportunities.",
     color: "#1EA6DA"
   },
   {
     icon: Lightbulb,
-    title: "Strategy & Planning",
-    description: "Our experts craft a tailored roadmap that aligns technology with your specific business objectives.",
+    title: "Strategize",
+    description: "Custom Growth Plan - Our experts craft data-driven marketing strategies tailored to your specific business objectives.",
     color: "#2EC4F1"
   },
   {
-    icon: Code,
-    title: "Development & Integration",
-    description: "We build and integrate robust solutions using cutting-edge technologies and agile methodologies.",
-    color: "#3B82F6"
-  },
-  {
     icon: Rocket,
-    title: "Launch & Optimization",
-    description: "Continuous monitoring and optimization to ensure your digital solutions deliver maximum impact.",
-    color: "#1EA6DA"
+    title: "Execute",
+    description: "Performance + Optimization - We implement campaigns and continuously optimize for maximum ROI and growth.",
+    color: "#3B82F6"
   }
 ];
 
@@ -36,15 +30,15 @@ const ApproachSection = () => {
             Our Process
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-[#1F2933] mb-6">
-            Development Approach
+            Our 3-Step Growth System
           </h2>
           <p className="text-lg text-[#4B5563] max-w-2xl mx-auto">
-            We follow a structured, transparent, and result-oriented approach to ensure 
-            every project we undertake is a success.
+            We follow a proven, data-driven approach that combines creativity, technology, and analytics 
+            to deliver measurable business growth.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+        <div className="grid md:grid-cols-3 gap-8 relative">
           {/* Connecting Line (Desktop) */}
           <div className="hidden lg:block absolute top-1/4 left-0 w-full h-0.5 bg-gradient-to-r from-[#1EA6DA]/20 via-[#2EC4F1]/20 to-[#1EA6DA]/20 -z-10" />
           

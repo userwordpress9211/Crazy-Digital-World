@@ -6,191 +6,14 @@ import { services } from "@/data/services";
 
 
 import { 
-  Laptop, 
-  ShoppingCart, 
-  Settings, 
-  Code, 
-  Smartphone, 
-  Globe, 
-  Cloud, 
-  Shield,
-  ArrowRight,
-  Search,
   TrendingUp,
-  MessageSquare,
+  Search,
+  Share2,
+  Target,
+  Globe,
+  Palette,
+  ArrowRight,
 } from "lucide-react";
-
-const services = [
-  {
-    icon: Laptop,
-    title: "IT Services & Consulting",
-    description:
-      "Strategic IT consulting to align technology with business goals and drive innovation.",
-    slug: "it-services-consulting",
-    features: [
-      "IT Strategy & Roadmapping",
-      "Digital Transformation",
-      "Technology Audits",
-      "Infrastructure Planning",
-    ],
-  },
-  {
-    icon: ShoppingCart,
-    title: "E-Commerce & Marketplace Management",
-    description:
-      "Expert management for Amazon, Flipkart, Myntra, and eBay to maximize online sales.",
-    slug: "ecommerce-listings",
-    features: [
-      "Product Listing Optimization",
-      "Account Management",
-      "Marketplace Ads",
-      "Sales & Performance Analytics",
-    ],
-  },
-  {
-    icon: Settings,
-    title: "Operations & Workflow Automation",
-    description:
-      "Automate and optimize business processes with intelligent workflow solutions.",
-    slug: "operations-workflow-automation",
-    features: [
-      "Business Process Automation",
-      "Workflow Design",
-      "CRM & Tool Integration",
-      "Task & Approval Management",
-    ],
-  },
-  {
-    icon: Code,
-    title: "Custom Software Development",
-    description:
-      "Tailor-made software solutions built to solve complex business challenges.",
-    slug: "custom-software-development",
-    features: [
-      "Enterprise Software Development",
-      "SaaS Product Development",
-      "API Development & Integration",
-      "Legacy System Modernization",
-    ],
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile App Development",
-    description:
-      "High-performance iOS and Android apps delivering seamless user experiences.",
-    slug: "mobile-app-development",
-    features: [
-      "Native iOS & Android Apps",
-      "React Native Development",
-      "Flutter App Development",
-      "App Store Optimization",
-    ],
-  },
-  {
-    icon: Globe,
-    title: "Web Development",
-    description:
-      "Modern, responsive, and SEO-friendly websites built with cutting-edge technologies.",
-    slug: "web-development",
-    features: [
-      "React & Next.js Development",
-      "WordPress & CMS Solutions",
-      "E-Commerce Development",
-      "Performance & SEO Optimization",
-    ],
-  },
-  {
-    icon: Cloud,
-    title: "Cloud Services",
-    description:
-      "Scalable and secure cloud solutions to improve agility and reduce infrastructure costs.",
-    slug: "cloud-services",
-    features: [
-      "AWS, Azure & GCP",
-      "Cloud Migration",
-      "DevOps & CI/CD",
-      "Serverless Architecture",
-    ],
-  },
-  {
-    icon: Shield,
-    title: "Cybersecurity Solutions",
-    description:
-      "Comprehensive security solutions to protect systems, data, and digital assets.",
-    slug: "cybersecurity-solutions",
-    features: [
-      "Security Audits & Assessments",
-      "Data Protection & Encryption",
-      "Threat Detection & Response",
-      "Compliance & Risk Management",
-    ],
-  },
-  {
-    icon: TrendingUp,
-    title: "Digital Marketing Services",
-    description:
-      "Grow your brand visibility and engagement with result-driven digital marketing.",
-    slug: "digital-marketing-services",
-    features: [
-      "Marketing Strategy",
-      "Paid Advertising Campaigns",
-      "Content Marketing",
-      "Analytics & Reporting",
-    ],
-  },
-  {
-    icon: Search,
-    title: "SEO Services",
-    description:
-      "Improve search rankings, organic traffic, and long-term online visibility.",
-    slug: "seo-services",
-    features: [
-      "Keyword Research",
-      "On-Page & Technical SEO",
-      "Content Optimization",
-      "Link Building",
-    ],
-  },
-  {
-    icon: Globe,
-    title: "Performance Marketing",
-    description:
-      "ROI-focused marketing campaigns designed to maximize conversions and revenue.",
-    slug: "performance-marketing",
-    features: [
-      "Google & Meta Ads",
-      "Conversion Tracking",
-      "Landing Page Optimization",
-      "A/B Testing & Scaling",
-    ],
-  },
-  {
-    icon: Cloud,
-    title: "Lead Generation",
-    description:
-      "Targeted strategies to generate high-quality, sales-ready business leads.",
-    slug: "lead-generation",
-    features: [
-      "Audience Targeting",
-      "Lead Funnel Design",
-      "CRM Integration",
-      "Lead Nurturing Automation",
-    ],
-  },
-  {
-    icon: MessageSquare,
-    title: "Social Media Marketing",
-    description:
-      "Engage audiences and build brand loyalty across social media platforms.",
-    slug: "social-media-marketing",
-    features: [
-      "Social Media Strategy",
-      "Content Creation",
-      "Community Management",
-      "Paid Social Campaigns",
-    ],
-  },
-];
 
 
 const Services = () => {
@@ -209,8 +32,8 @@ const Services = () => {
                 Our <span className="text-[#1EA6DA]">Services</span>
               </h1>
               <p className="text-xl text-[#4B5563] leading-relaxed">
-                Transform your business with our comprehensive suite of IT solutions. 
-                From custom software development to cloud services, we've got you covered.
+                Transform your business with our comprehensive suite of digital marketing solutions. 
+                From SEO to paid advertising, we deliver measurable growth and ROI.
               </p>
             </div>
           </div>

@@ -12,23 +12,23 @@ const stats = [
 const values = [
   {
     icon: Target,
-    title: "Mission-Driven",
-    description: "We're committed to delivering innovative solutions that transform businesses and drive measurable results.",
+    title: "Our Mission",
+    description: "To help brands grow smarter, faster, and more profitably using digital innovation.",
   },
   {
     icon: Lightbulb,
-    title: "Innovation First",
-    description: "We stay ahead of technology trends to provide cutting-edge solutions that give our clients a competitive edge.",
+    title: "Our Vision",
+    description: "To become a global leader in AI-driven marketing and business growth solutions.",
   },
   {
     icon: Users,
-    title: "Client-Centric",
-    description: "Your success is our priority. We work closely with you to understand your needs and exceed expectations.",
+    title: "Data-Driven",
+    description: "We focus on results, not vanity metrics. Every strategy backed by data and analytics.",
   },
   {
     icon: Award,
-    title: "Excellence",
-    description: "We maintain the highest standards in code quality, design, and project delivery.",
+    title: "Transparent & Accountable",
+    description: "We provide transparent reporting and take full responsibility for delivering measurable ROI.",
   },
 ];
 
@@ -165,16 +165,16 @@ const About = () => {
                   Why Choose Us
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold font-heading text-[#1F2933] mb-8">
-                  Your Partner in <span className="text-[#1EA6DA]">Digital Excellence</span>
+                  What Makes Us <span className="text-[#1EA6DA]">Different</span>
                 </h2>
                 <ul className="space-y-5">
                   {[
-                    "Proven track record with 500+ successful projects",
-                    "Expert team of certified developers and designers",
-                    "Agile methodology for faster delivery",
-                    "24/7 support and maintenance",
-                    "Cost-effective solutions without compromising quality",
-                    "Transparent communication throughout the project",
+                    "We focus on results, not vanity metrics",
+                    "We use AI + Data-driven marketing",
+                    "We build long-term growth systems",
+                    "Transparent reporting and accountability",
+                    "Global client experience from India to USA to Dubai",
+                    "ROI-focused execution on every campaign",
                   ].map((item, index) => (
                     <li key={index} className="flex items-start gap-4">
                       <div className="w-6 h-6 rounded-full bg-[#EAF6FB] flex items-center justify-center shrink-0 mt-0.5">

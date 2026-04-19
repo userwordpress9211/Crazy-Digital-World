@@ -17,33 +17,33 @@ const HeroSection = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1EA6DA] opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-[#1EA6DA]"></span>
               </span>
-              Accelerate Your Digital Growth
+              Results-Driven Digital Marketing
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-[#1F2933] leading-tight mb-6">
-              Empowering Your <span className="text-[#1EA6DA]">Digital Future</span> with Innovation
+              We Don't Just Market. We Build <span className="text-[#1EA6DA]">Digital Empires</span>
             </h1>
             <p className="text-lg text-[#4B5563] mb-8 leading-relaxed max-w-xl">
-              We provide cutting-edge IT services and consulting to help businesses scale, 
-              optimize operations, and dominate the digital landscape.
+              We combine creativity, data, and AI to deliver measurable business growth. 
+              From startups to global brands, we help businesses dominate the digital landscape with performance-driven marketing strategies.
             </p>
             
             <div className="flex flex-wrap gap-4 mb-10">
               <Button className="bg-[#1EA6DA] text-white hover:bg-[#0F5FA8] h-12 px-8 rounded-lg text-base font-semibold shadow-lg shadow-[#1EA6DA]/20" asChild>
-                <Link to="/services">
-                  Our Services <ArrowRight className="ml-2 w-5 h-5" />
+                <Link to="/contact">
+                  Get Free Strategy Call <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
               <Button variant="outline" className="border-2 border-[#1EA6DA] text-[#1EA6DA] hover:bg-[#1EA6DA] hover:text-white h-12 px-8 rounded-lg text-base font-semibold" asChild>
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/portfolio">View Our Work</Link>
               </Button>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                "Expert IT Consulting",
-                "Custom Software Solutions",
-                "E-commerce Growth",
-                "24/7 Technical Support"
+                "Data-driven campaigns",
+                "ROI-focused execution",
+                "AI-powered strategies",
+                "Global client experience"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-2 text-[#4B5563]">
                   <CheckCircle2 className="w-5 h-5 text-[#2EC4F1]" />

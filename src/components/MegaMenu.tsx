@@ -2,99 +2,51 @@ import { Link } from "react-router-dom";
 // import { services } from "@/data/services";
 
 import {
-  Laptop,
-  ShoppingCart,
-  Settings,
-  Code,
-  Smartphone,
-  Globe,
-  Cloud,
-  Shield,
-  ArrowRight,
-  Search,
-  Megaphone,
   TrendingUp,
-  Users
+  Search,
+  Share2,
+  Target,
+  Globe,
+  Palette,
+  ArrowRight,
 } from "lucide-react";
 
 var services = [
   {
-    icon: Laptop,
-    title: "IT Services & Consulting",
-    description: "Strategic IT guidance and planning",
-    slug: "it-services-consulting",
-  },
-  {
-    icon: ShoppingCart,
-    title: "E-Commerce & Marketplace Management",
-    description: "Amazon, Flipkart, Myntra & eBay growth",
-    slug: "ecommerce-listings",
-  },
-  {
-    icon: Settings,
-    title: "Operations & Workflow Automation",
-    description: "Automate and optimize business processes",
-    slug: "operations-workflow-automation",
-  },
-  {
-    icon: Code,
-    title: "Custom Software Development",
-    description: "Tailor-made software solutions",
-    slug: "custom-software-development",
-  },
-  {
-    icon: Smartphone,
-    title: "Mobile App Development",
-    description: "iOS & Android app development",
-    slug: "mobile-app-development",
-  },
-  {
-    icon: Globe,
-    title: "Web Development",
-    description: "High-performance, scalable websites",
-    slug: "web-development",
-  },
-  {
-    icon: Cloud,
-    title: "Cloud Services",
-    description: "Secure and scalable cloud solutions",
-    slug: "cloud-services",
-  },
-  {
-    icon: Shield,
-    title: "Cybersecurity Solutions",
-    description: "Protect systems, data & infrastructure",
-    slug: "cybersecurity-solutions",
-  },
-  {
-    icon: Megaphone,
-    title: "Digital Marketing Services",
-    description: "Grow your brand and online visibility",
-    slug: "digital-marketing-services",
+    icon: TrendingUp,
+    title: "Performance Marketing",
+    description: "ROI-focused paid advertising campaigns",
+    slug: "performance-marketing",
   },
   {
     icon: Search,
     title: "SEO Services",
-    description: "Improve rankings and organic traffic",
+    description: "Improve search rankings and organic traffic",
     slug: "seo-services",
   },
   {
-    icon: TrendingUp,
-    title: "Performance Marketing",
-    description: "ROI-focused paid marketing campaigns",
-    slug: "performance-marketing",
+    icon: Share2,
+    title: "Social Media Marketing",
+    description: "Build engagement and brand loyalty",
+    slug: "social-media-marketing",
   },
   {
-    icon: Users,
+    icon: Target,
     title: "Lead Generation",
-    description: "Generate high-quality business leads",
+    description: "Targeted strategies for quality leads",
     slug: "lead-generation",
   },
   {
-    icon: Shield,
-    title: "Social Media Marketing",
-    description: "Engage audiences and build trust",
-    slug: "social-media-marketing",
+    icon: Globe,
+    title: "Website Design & Development",
+    description: "High-converting websites built with modern tech",
+    slug: "web-development",
+  },
+  {
+    icon: Palette,
+    title: "Branding & Creative Strategy",
+    description: "Complete brand identity and creative campaigns",
+    slug: "branding-creative",
   },
 ];
 
@@ -113,7 +65,7 @@ const MegaMenu = ({ onClose }: MegaMenuProps) => {
               Our Expertise
             </h3>
 
-            <div className="grid md:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
               {services.map((service, index) => (
                 <Link
                   key={index}

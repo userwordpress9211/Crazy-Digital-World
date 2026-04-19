@@ -1,22 +1,22 @@
 const projects = [
   {
-    name: "E-Commerce Platform",
-    category: "Web Development",
+    name: "E-commerce Sales Growth",
+    category: "Performance Marketing",
     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
   },
   {
-    name: "Fintech Dashboard",
-    category: "UI/UX Design",
+    name: "Real Estate Lead Generation",
+    category: "Digital Marketing",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
   },
   {
-    name: "Logistics Tracker",
-    category: "Mobile App",
+    name: "Healthcare Brand Building",
+    category: "Branding & Creative",
     image: "https://images.unsplash.com/photo-1547954575-855750c57bd3?w=600&h=400&fit=crop",
   },
   {
-    name: "Corporate Portal",
-    category: "Enterprise Solution",
+    name: "Startup Growth Scaling",
+    category: "Growth Marketing",
     image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&h=400&fit=crop",
   },
 ];

@@ -123,8 +123,8 @@ ${formData.message}
                 Get in <span className="text-[#1EA6DA]">Touch</span>
               </h1>
               <p className="text-xl text-[#4B5563] leading-relaxed">
-                Have a project in mind? Let's discuss how we can help you achieve 
-                your business goals with our IT solutions.
+                Ready to scale your business with digital marketing? Let's discuss how we can help you 
+                achieve measurable growth and ROI with our data-driven strategies.
               </p>
             </div>
           </div>

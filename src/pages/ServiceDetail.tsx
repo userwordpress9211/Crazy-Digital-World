@@ -177,36 +177,6 @@ const servicesData: Record<string, {
       { title: "Growth", description: "Updates, monitoring, and optimization" },
     ],
   },
-  "web-development": {
-    icon: Globe,
-    title: "Web Development",
-    description: "Design and develop high-performance websites",
-    longDescription: "Our web development services create responsive, fast, and user-friendly websites that drive business growth. From corporate sites to e-commerce platforms, we build web experiences that convert.",
-    features: [
-      "WordPress Development",
-      "E-commerce Solutions",
-      "Progressive Web Apps (PWA)",
-      "CMS Development",
-      "SEO Optimization",
-      "Performance Optimization",
-    ],
-    benefits: [
-      "Professional online presence",
-      "Higher search engine rankings",
-      "Better user experience",
-      "Increased conversions",
-      "Mobile-responsive design",
-      "Easy content management",
-    ],
-    process: [
-      { title: "Planning", description: "Define site structure and goals" },
-      { title: "Design", description: "Create beautiful, on-brand designs" },
-      { title: "Development", description: "Build fast, secure websites" },
-      { title: "Content", description: "Populate with optimized content" },
-      { title: "Testing", description: "Cross-browser and device testing" },
-      { title: "Launch", description: "Go live with ongoing support" },
-    ],
-  },
   "database-solutions": {
     icon: Database,
     title: "Database Solutions",
@@ -513,6 +483,66 @@ const servicesData: Record<string, {
     { title: "Ads", description: "Run paid campaigns" },
     { title: "Optimization", description: "Improve performance" },
   ],
+},
+"branding-creative": {
+  icon: Palette,
+  title: "Branding & Creative Strategy",
+  description: "Make your brand unforgettable",
+  longDescription: "Our Branding & Creative services help you build a distinctive brand identity that resonates with your target audience and drives customer loyalty. From logo design to comprehensive brand guidelines, we create cohesive visual identities that tell your story and differentiate you from competitors.",
+  features: [
+    "Logo & Brand Identity Design",
+    "Ad Creatives & Visual Assets",
+    "Social Media Designs",
+    "Brand Positioning & Strategy",
+    "Brand Messaging & Copywriting",
+    "Creative Campaign Development"
+  ],
+  benefits: [
+    "Distinctive brand identity",
+    "Increased brand recognition",
+    "Stronger emotional connection with audience",
+    "Consistent brand messaging",
+    "Higher perceived value",
+    "Competitive advantage"
+  ],
+  process: [
+    { title: "Discovery", description: "Understand your brand and market" },
+    { title: "Strategy", description: "Develop comprehensive brand strategy" },
+    { title: "Design", description: "Create visual identity and assets" },
+    { title: "Development", description: "Build brand guidelines" },
+    { title: "Implementation", description: "Apply across all touchpoints" },
+    { title: "Optimization", description: "Refine based on performance" }
+  ]
+},
+"web-development": {
+  icon: Globe,
+  title: "Website Design & Development",
+  description: "Build high-converting websites",
+  longDescription: "We create stunning, high-performance websites that not only look great but also drive conversions and deliver exceptional user experiences. Our websites are built with modern technologies, optimized for speed, and designed to convert visitors into customers.",
+  features: [
+    "Responsive Web Design",
+    "E-commerce Websites",
+    "UI/UX Optimization",
+    "Website Speed Optimization",
+    "SEO-Friendly Architecture",
+    "CMS Integration"
+  ],
+  benefits: [
+    "Better user experience",
+    "Higher conversion rates",
+    "Improved SEO rankings",
+    "Faster page load times",
+    "Mobile-friendly design",
+    "Easy content management"
+  ],
+  process: [
+    { title: "Discovery", description: "Understand your business goals" },
+    { title: "Design", description: "Create wireframes and mockups" },
+    { title: "Development", description: "Build with latest technologies" },
+    { title: "Content", description: "Implement all content and media" },
+    { title: "Testing", description: "QA across all devices" },
+    { title: "Launch", description: "Deploy and monitor performance" }
+  ]
 },
 
 
