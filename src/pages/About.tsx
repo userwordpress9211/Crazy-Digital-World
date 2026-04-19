@@ -96,7 +96,7 @@ const About = () => {
                   <p>
                     With a team of experienced developers, designers, and strategists, we've 
                     successfully completed over 500 projects across various industries including 
-                    healthcare, finance, retail, and more. 
+                    healthcare, finance, retail, and more.
                   </p>
                 </div>
               </div>
